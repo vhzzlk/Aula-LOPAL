@@ -67,7 +67,7 @@ public class ex3 {
 
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consume newline left-over
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -95,7 +95,7 @@ public class ex3 {
 
         System.out.print("Digite o saldo inicial: R$");
         double saldo = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline left-over
+        scanner.nextLine(); 
 
         Conta conta = new Conta(numeroConta, senha, saldo);
         contas.put(conta.getNumero(), conta);
@@ -140,7 +140,7 @@ public class ex3 {
 
             System.out.print("Escolha uma opção: ");
             int opcao = scanner.nextInt();
-            scanner.nextLine(); // Consume newline left-over
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
@@ -168,7 +168,7 @@ public class ex3 {
     private void depositar(Conta conta) {
         System.out.print("Digite o valor para depositar: R$");
         double valor = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline left-over
+        scanner.nextLine(); 
 
         if (valor > 0) {
             conta.depositar(valor);
@@ -181,7 +181,7 @@ public class ex3 {
     private void sacar(Conta conta) {
         System.out.print("Digite o valor para sacar: R$");
         double valor = scanner.nextDouble();
-        scanner.nextLine(); // Consume newline left-over
+        scanner.nextLine(); 
 
         if (valor > 0 && conta.getSaldo() >= valor) {
             conta.sacar(valor);
